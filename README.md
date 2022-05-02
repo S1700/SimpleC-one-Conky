@@ -1,5 +1,5 @@
 # SimpleC - One Conky
-## Not my script/theme I have only forkes this to fix a few things
+## Not my script/theme I have only forked this to fix a few things
 ![newscreen](https://user-images.githubusercontent.com/9018264/51747311-41090380-2090-11e9-95f2-10079281c6a5.png)
 Simple Conky Theme with 4 widgets: 
 -Weather
