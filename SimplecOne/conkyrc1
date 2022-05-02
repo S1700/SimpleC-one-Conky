@@ -49,7 +49,7 @@ $color1${execi 3600 ~/.conky/SimplecOne/weather.sh}
 ${goto 20}${color2}${font LineAwesomeMod :size=15}V $color1$font${execi 60 cat ~/.cache/weather.txt | grep city | cut -d">" -f2} - ${execi 60 cat ~/.cache/weather.txt | grep country | cut -d">" -f2}
 ${voffset 0}${goto 20}${color2}${font LineAwesomeMod :size=50}O $color1${font Roboto Condensed:size=50}${execi 60 cat ~/.cache/weather.txt | grep temp | cut -d">" -f2}º$color1 $font
 ${goto 20}${color2}${font LineAwesomeMod :size=15}O $color1$font ${execi 60 cat ~/.cache/weather.txt | grep description | cut -d">" -f2}
-${goto 20}${color2}${font LineAwesomeMod :size=15}) $color1$font Min: ${execi 60 cat ~/.cache/weather.txt | grep min | cut -d">" -f2}º  
+${goto 20}${color2}${font LineAwesomeMod :size=15}) $color1$font Min: ${execi 60 cat ~/.cache/weather.txt | grep '^min' | cut -d">" -f2}º  
 ${voffset -20}${alignr -89}${color2}${font LineAwesomeMod :size=15}( $color1$font Max: ${execi 60 cat ~/.cache/weather.txt | grep max | cut -d">" -f2}º
 ${goto 20}${color2}${font LineAwesomeMod :size=15}! $color1$font Humidity: ${execi 60 cat ~/.cache/weather.txt | grep humidity | cut -d">" -f2}% 
 ${voffset -20}${alignr -164}${color2}${font LineAwesomeMod :size=15}o $color1$font Winds: ${execi 60 cat ~/.cache/weather.txt | grep wind | cut -d">" -f2} m/s
