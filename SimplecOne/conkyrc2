@@ -49,7 +49,7 @@ ${voffset -10}$color1
 ${goto 30}$color2${font LineAwesomeMod :size=50}:$color1 ${font Roboto Condensed:size=50}${exec date +%H:%M:%S}
 
 ${goto 30}$color2${font LineAwesomeMod :size=50}K $color1$font
-${alignr 35}${voffset -60}${exec date +"%A" | tr [a-z-ç] [A-Z-Ç]}
+${alignr 25}${voffset -60}${exec date +"%A" | tr [a-z-ç] [A-Z-Ç]}
 ${alignr 126}${voffset -20}${font Roboto Condensed:size=50}${exec date +%d}/$font
 ${goto 205}${voffset -48}${font Roboto Condensed:size=34}${exec date +%m}/$font${alignr 30}${exec date +%Y}
 ${voffset -120}
